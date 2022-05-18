@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light  " style="height:80px;font-size: 19px; box-shadow: 0 0 20px rgba(0,0,0,1); background-color: #107dea;">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 25px;" href="#">ZTZ JEWELRY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: 18px;" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: 18px;" aria-current="page" href="/jewelry">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-size: 18px;" href="/logout">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="font-size: 18px;" href="/customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="font-size: 18px;" href="category">category</a>
+                </li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search"  placeholder="найти" aria-label="Search">
+            <button class="btn btn-outline-dark"   type="submit">Найти</button>
+        </form>
+    </div>
+</nav>
+<h1>JEWELRY</h1>
+<br><br><br>
+
+<div class="container" id="brc"  style="margin-bottom:10px;margin-top: 50px; padding:40px;">
+    <h4>Браслеты ZTZ JEWELRY</h4>
+    <p>Стильные браслеты ZTZ   отлично выглядят соло, и в комбинации с другими браслетами.</p>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/b4a/b4a0bc703604b001ccc4eaad246303e4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">БраслетУзел бесконечности</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/54f/54fc0847886f3c3f6aa49d5b7175bf39.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Браслет-цепочка Бесконечные сердца</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/63d/63d1dd0487ac5e83eefc22bcad03e5ef.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Браслет Сверкающие камни </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/58a/58a1ce40e9aa65e69e856b71ed1e762e.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Браслет Бабочка </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container " id="ring"   style="margin-bottom:10px;margin-top: 50px;padding:40px;">
+    <h4>Кольца  ZTZ JEWELRY</h4>
+    <p>Кольца ZTZ   — это изысканные ювелирные изделия ручной работы выполненные из драгоценных металлов, которые добавят «изюминки» в образ.</p>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/355/3559522fcc2cf83240f129b4eefbabe8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Кольцо Сверкающий венец</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/cf9/cf987ba2f9cfc8d85087ba6ca1d14bab.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Кольцо с сердцем Мама</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/614/614b0b4cbb8e7294feccfcdec4b768ff.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Кольцо Сверкающее сердце</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/183/1830102b09418505cf3ec2be4f620297.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Кольцо Два сердца</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container "  id="serg" style="margin-bottom:10px;margin-top: 50px;padding:40px;">
+    <h4>Серьги ZTZ JEWELRY</h4>
+    <p>Серьги ZTZ ручной работы выполненные из превосходных драгоценных металлов - серебро, золото, сплава, покрытого розовым золотом 14К и сплава, покрытого золотом 14К. Совмещайте их с другими драгоценностями от ZTZ и создавайте свой уникальный стиль.</p>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/7f4/7f414c338aac6c990198c35dde25770c.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Серьги-гвоздики Сверкающий венец</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/169/169e02eee5df20d8c9fce831de3e5749.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Серьги-гвоздики Семья навсегда
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/033/0336374aff5b9e1cd60505533cab90f2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Серьги-кольца Семья навсегда</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/dfd/dfd864a550e2253181163c9adc3be8e2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Серьги-гвоздики Два сердца </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container "  id="sharm" style="margin-bottom:10px;margin-top: 50px;padding:40px;">
+    <h4>Шармы ZTZ JEWELRY</h4>
+    <p>Шармы - это прекрасное средство выразить себя. С ними вы можете заявить о чем угодно, показать свое уникальное чувство стиля, сделать их символом памятных моментов или отдать дань своим близким. Выражайте себя, преображайтесь и станьте хозяйкой своего образа.</p>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/cdf/cdf2f91feabfa87deda96c21cabf33ef.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Шарм-подвеска Семья навсегда</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/f41/f41f27871cb9b1b7936b3bdf0caf3fd1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Шарм-подвеска Бесконечная любовь
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/199/199a861f5db66c9ff4d4c67f269a8b33.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Шарм Мама и Минни-Маус, Disney</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card " style="width: 21rem;">
+                <img src="https://pandora.kz/upload/iblock/1cb/1cba22e688f9134e73d527160b07830d.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-tittle">Шарм Спасибо Мама </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

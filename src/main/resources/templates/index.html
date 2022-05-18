@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light  " style="height:80px;font-size: 19px; box-shadow: 0 0 20px rgba(0,0,0,1); background-color: #107dea;">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 25px;" href="#">ZTZ JEWELRY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: 18px;" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: 18px;" aria-current="page" href="/jewelry">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-size: 18px;" href="/logout">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="font-size: 18px;" href="/registration">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  style="font-size: 18px;" href="/customer">customer</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="container mt-3">
+    <div class="image">
+        <img src="https://cdn.sokolov.ru/upload/main-page/slider/1360x650/0e19a6c2f3cf61d7a78cc4728f0f4bd5.jpg" alt="">
+
+    </div>
+</div>
+<br>
+<p class="mt-3">	<MARQUEE class="str" direction=left	scrollamount="30"  scrolldelay="250"	height=30	width="100%" style="background-color: #7992e7; color:black">
+    WELCOME TO JEWELRY
+</MARQUEE>
+</p>
+
+<div th:switch="${jewelry.size() > 0}">
+    <h2 th:case="false">No jewelry yet!</h2>
+    <div th:case="true">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Weight</th>
+                <th>Price</th>
+                <th>Details</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="main : ${jewelry}">
+                <td th:text="${main.name}"></td>
+                <td th:text="${main.category}"></td>
+                <td th:text="${main.category}"></td>
+                <td th:text="${main.price}"></td>
+                <td><a class="btn btn-outline-dark"th:href="@{/edit/{id}(id=${main.id})}">Detalis</a></td>
+                <td><a class="btn btn-outline-danger" th:href="@{/delete/{id}(id=${main.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <form class="form-inline" action="/signup">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Add a new jewelry</button>
+    </form>
+
+</div>
+<!--<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">-->
+<!--    © 2022-->
+<!--    <p>Phones</p>-->
+<!--</div>-->
+</body>
+</html>
